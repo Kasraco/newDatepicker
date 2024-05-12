@@ -80,7 +80,7 @@ Initialize the Datepicker and configure it to show the button panel and set the 
 ```
 Customize the CSS styles (**class**) of the buttons and adjust the functionality of each button (**click** event) as needed.
 
-Features
+**Features**
 - Adds "Today", "Next", and "Next Week" buttons to the jQuery UI Datepicker for enhanced date selection.
 
 - Dynamically updates the button panel when the Datepicker is displayed or when the month/year changes.
