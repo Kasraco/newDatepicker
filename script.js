@@ -7,9 +7,6 @@ $(function () {
         },
         onChangeMonthYear: function (yy, mm, inst) {
             generateButton(inst.input);
-        },
-        onUpdateDatepicker: function (ins) {
-            generateButton(inst.input);
         }
 
     });
@@ -22,7 +19,7 @@ $(function () {
                 text: "Today",
                 class: "ui-datepicker-clear ui-state-default ui-priority-primary ui-corner-all pull-left",
                 click: function () {
-                    $(input).datepicker("setDate", new Date()).datepicker("hide");
+                    $(input).datepicker("setDate", new Date());
 
                 }
             });
@@ -33,7 +30,7 @@ $(function () {
                 click: function () {
                     var currentDate = $(input).datepicker('getDate');
                     currentDate.setMonth(currentDate.getMonth() + 1);
-                    $(input).datepicker('setDate', currentDate).datepicker("hide");
+                    $(input).datepicker('setDate', currentDate);
 
                 }
             });
@@ -44,7 +41,7 @@ $(function () {
                 click: function () {
                     var currentDate = $(input).datepicker('getDate');
                     currentDate.setDate(currentDate.getDate() + 7);
-                    $(input).datepicker('setDate', currentDate).datepicker("hide");
+                    $(input).datepicker('setDate', currentDate);
 
 
                 }
