@@ -10,6 +10,7 @@ $(function () {
         }
 
     });
+    $("#datepicker").datepicker("setDate", new Date());
 
     function generateButton(input) {
         setTimeout(function () {
